@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="data" (input)="checkemail($event)" 
+  (blur)="onBlur()" 
+  (focus)="suggestions.length !== 0 ? hasData = true : undefined"
+>
+<div class="droplist" *ngIf="!selected && hasData">
+  <li class="list-item" *ngFor="let suggestion of suggestions" 
+    (click)="outputData(suggestion);"
+  >{{suggestion}}</li>
+</div>

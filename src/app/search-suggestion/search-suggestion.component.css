@@ -1,0 +1,20 @@
+.droplist {
+    background-color: white;
+    border: 1px solid #949494;
+    border-radius: 5px;
+    width: 16rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    list-style-type: none;
+    max-height: 40rem;
+    overflow-y: scroll;
+    box-sizing: content-box;
+}
+
+.list-item {
+    padding: 0.2rem 0.4rem;
+}
+
+.list-item:hover{
+    cursor: pointer;
+    background-color: #b4dce4;
+}
