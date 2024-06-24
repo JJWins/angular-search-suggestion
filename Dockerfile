@@ -1,8 +1,8 @@
 FROM node
 
-RUN mkdir -p /src
+WORKDIR /app
 
-COPY ./src
+COPY . /app
 
 RUN npm install -g @angular/cli
 
